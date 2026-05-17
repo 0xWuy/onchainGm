@@ -1,0 +1,36 @@
+{
+  "name": "arc-gm-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A beginner-friendly on-chain GM app for Arc Testnet.",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "compile": "hardhat compile",
+    "test:contract": "hardhat test",
+    "deploy:arc": "hardhat run scripts/deploy-gm.cjs --network arcTestnet",
+    "deploy:local": "hardhat run scripts/deploy-gm.cjs --network localhost",
+    "node:hardhat": "hardhat node",
+    "cloudflare:deploy": "npx wrangler@latest pages deploy dist --project-name arc-gm-app"
+  },
+  "dependencies": {
+    "lucide-react": "^0.468.0",
+    "viem": "^2.21.53",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.8",
+    "@types/node": "^22.10.2",
+    "@types/react": "^18.3.17",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "chai": "^4.5.0",
+    "dotenv": "^16.4.7",
+    "ethers": "^6.13.4",
+    "hardhat": "^2.26.3",
+    "typescript": "^5.7.2",
+    "vite": "5.4.11"
+  }
+}
