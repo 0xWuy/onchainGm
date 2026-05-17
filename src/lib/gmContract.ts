@@ -59,8 +59,12 @@ export type GmPost = {
   createdAt: bigint;
 };
 
+const deployedArcGmAddress = "0x1E3b98102e19D3a164d239BdD190913C2F02E756";
+
 const contractAddresses: Record<number, `0x${string}` | undefined> = {
-  [arcTestnet.id]: normalizeAddress(import.meta.env.VITE_GM_CONTRACT_ADDRESS_ARC),
+  [arcTestnet.id]: normalizeAddress(
+    import.meta.env.VITE_GM_CONTRACT_ADDRESS_ARC || deployedArcGmAddress,
+  ),
   [hardhatLocal.id]: normalizeAddress(import.meta.env.VITE_GM_CONTRACT_ADDRESS_LOCAL),
 };
 
