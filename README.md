@@ -1,4 +1,4 @@
-# Arc GM App
+# 0xWuy ARC GM App
 
 A beginner-friendly on-chain GM app for Arc Testnet. The smart contract stores GM messages, and the React UI lets a wallet send a new GM and read recent GMs.
 
@@ -127,7 +127,7 @@ Create an empty GitHub repository in the browser, then run:
 ```powershell
 git init
 git add .
-git commit -m "Build Arc GM app"
+git commit -m "Build 0xWuy ARC GM app"
 git branch -M main
 git remote add origin https://github.com/YOUR_USERNAME/arc-gm-app.git
 git push -u origin main

@@ -77,14 +77,12 @@ a {
 }
 
 .brand-mark {
-  display: grid;
+  display: block;
   width: 36px;
   height: 36px;
-  place-items: center;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #f2f2e8;
-  color: #08090a;
+  object-fit: cover;
 }
 
 .wallet-button,
